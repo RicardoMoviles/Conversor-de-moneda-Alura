@@ -9,7 +9,7 @@ import java.net.http.HttpResponse;
 public class ConsultaMoneda {
 
     public Moneda buscaMoneda (String moneda, String nuevaMoneda) throws IOException, InterruptedException {
-        String yourApiKey= "2bcc63087610a8001c1653ec";
+        String yourApiKey= System.getenv("API_KEY");
         URI direccion = URI.create("https://v6.exchangerate-api.com/v6/"
                 +yourApiKey+"/pair/"
                 +moneda+"/"
