@@ -1,4 +1,4 @@
 public record Moneda(String base_code,
-                     String tarjet_code,
-                     int conversion_rate) {
+                     String target_code,
+                     double conversion_rate) {
 }
